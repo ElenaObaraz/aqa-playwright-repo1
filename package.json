@@ -1,0 +1,23 @@
+{
+  "name": "aqa-playwright-repo1",
+  "version": "1.0.0",
+  "description": "This repo was created to get started with Playwright",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElenaObaraz/aqa-playwright-repo1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ElenaObaraz/aqa-playwright-repo1/issues"
+  },
+  "homepage": "https://github.com/ElenaObaraz/aqa-playwright-repo1#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
