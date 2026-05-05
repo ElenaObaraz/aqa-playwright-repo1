@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "This repo was created to get started with Playwright",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test:env1": "cross-env ENV=1 playwright test",
+    "test:env2": "cross-env ENV=2 playwright test"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ElenaObaraz/aqa-playwright-repo1.git"
@@ -18,6 +21,10 @@
   "homepage": "https://github.com/ElenaObaraz/aqa-playwright-repo1#readme",
   "devDependencies": {
     "@playwright/test": "^1.59.1",
-    "@types/node": "^25.6.0"
+    "@types/node": "^25.6.0",
+    "cross-env": "^10.1.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
   }
 }

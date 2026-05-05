@@ -1,4 +1,9 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const ENV = process.env.ENV || '1';
 
 /**
  * Read environment variables from file.
@@ -27,6 +32,12 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+    baseURL: process.env[`BASE_URL_${ENV}`],
+
+    httpCredentials: {
+      username: process.env[`AUTH_USER_${ENV}`]!,
+      password: process.env[`AUTH_PASS_${ENV}`]!
+    },
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
